@@ -1,131 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>CSS Lecture – Micro Demos (External CSS)</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <!-- External CSS -->
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <title>Ahmed Abdelhamid - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <h1>CSS Lecture – Micro Examples</h1>
-  <p class="intro">All styles come from <code>style.css</code></p>
+    <a href="#main" class="skip-link">Skip to content</a>
 
-  <section>
-    <h2 >1. CSS Rule Anatomy</h2>
-    <p class="note">Hello CSS</p>
-  </section>
+    <header>
+        <h1>Ahmed Abdelhamid</h1>
+        <figure>
+            <img src="WhatsApp Image 2026-01-06 at 5.16.15 PM (2).jpeg" alt="A photo of Ahmed Abdelhamid" width="150" />
+            <figcaption>Ahmed Abdelhamid - IT Student</figcaption>
+        </figure>
+        <p>Information Technology Student</p>
+        <p>Degree Program: Bachelor of Information Technology</p>
+        <p>Location: Kuopio, Finland</p>
+        <p>Short Bio: I am a passionate IT student interested in web development, software engineering, and autonomous robotics.</p>
+    </header>
 
-  <section>
-    <h2>2. Selectors</h2>
-    <h3 class="kicker">Title</h3>
-    <p class="lead">Lead paragraph</p>
-    <p class="my-lead">My Lead paragraph</p>
+    <nav>
+        <ul>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#interests">Areas of Interest</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-    <p id="warning">Warning text</p>
-    <p id="my-warning">My Warning text</p>
+    <main id="main">
 
+        <section id="portfolio">
+            <h2>Portfolio & Works</h2>
 
-  </section>
+            <h3>My Links</h3>
+            <ul>
+                <li><a href="https://github.com/AhmedAbdelhamidd" target="_blank">My GitHub Profile</a></li>
+                <li><a href="https://linkedin.com/in/your-profile" target="_blank">My LinkedIn Profile</a></li>
+            </ul>
 
-  <section>
-    <h2>3. Grouping & Descendant</h2>
-    <div class="card">
-      <h4>Card</h4>
-      <p>Description</p>
-    </div>
-  </section>
+            <h3>My Projects</h3>
+            <article class="card">
+                <h4>Autonomous Indoor Robot</h4>
+                <p>I worked on an autonomous robot that works indoors. The robot is able to navigate indoor environments without human control.</p>
+                <figure>
+                    <video width="560" controls>
+                        <source src="WhatsApp Video 2026-03-22 at 2.19.05 PM (1).mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <figcaption>My Autonomous Indoor Robot in action</figcaption>
+                </figure>
+            </article>
+        </section>
 
-  <section>
-    <h2>4. Pseudo-classes & nth-child</h2>
-    <a class="btn" href="#">Hover me</a>
-    <ul class="list">
-      <li>A</li><li>B</li><li>C</li><li>D</li>
-    </ul>
-  </section>
+        <section id="interests">
+            <h2>Areas of Interest</h2>
 
-  <section>
-    <h2>5. Pseudo-elements</h2>
-    <p class="tag">New</p>
-  </section>
+            <article>
+                <h3>Technology</h3>
+                <ul>
+                    <li>Web Development (HTML, CSS, JavaScript)</li>
+                    <li>Software Engineering</li>
+                    <li>Artificial Intelligence</li>
+                    <li>Autonomous Robotics</li>
+                </ul>
+            </article>
 
-  <section>
-    <h2>6. Cascade & Specificity</h2>
-    <p id="x" class="a">Specificity test</p>
-  </section>
+            <article>
+                <h3>Studies</h3>
+                <ul>
+                    <li>Information Technology at Savonia University</li>
+                    <li>Browser Programming</li>
+                    <li>Database Management</li>
+                </ul>
+            </article>
 
-  <section>
-    <h2>7. Units</h2>
-    <div class="box">
-      <p class="em">em based</p>
-      <p class="rem">rem based</p>
-    </div>
-  </section>
+            <article>
+                <h3>Hobbies</h3>
+                <ul>
+                    <li>Football</li>
+                    <li>Reading tech blogs</li>
+                    <li>Building robots and personal projects</li>
+                </ul>
+            </article>
+        </section>
 
-  <section>
-    <h2>8. Colors</h2>
-    <div class="c1">Named color</div>
-    <div class="c2">Hex color</div>
-    <div class="c3">RGBA color</div>
-  </section>
+    </main>
 
-  <section>
-    <h2>9. Box Model</h2>
-    <div class="panel">Box model demo</div>
-  </section>
-
-  <section>
-    <h2>10. Display</h2>
-    <span class="pill">One</span>
-    <span class="pill">Two</span>
-  </section>
-
-  <section>
-    <h2>11. Positioning</h2>
-    <div class="wrap">
-      <div class="badge">NEW</div>
-      <img class="photo" src="https://picsum.photos/320/140" alt="">
-    </div>
-  </section>
-
-  <section>
-    <h2>12. Flexbox</h2>
-    <div class="row">
-      <div class="cell">A</div>
-      <div class="cell">B</div>
-      <div class="cell">C</div>
-    </div>
-  </section>
-
-  <section>
-    <h2>13. Grid</h2>
-    <div class="grid">
-      <div class="cell">1</div><div class="cell">2</div><div class="cell">3</div>
-      <div class="cell">4</div><div class="cell">5</div><div class="cell">6</div>
-    </div>
-  </section>
-
-  <section>
-    <h2>14. Media Query</h2>
-    <div class="layout">Resize the window</div>
-  </section>
-
-  <section>
-    <h2>15. Transition</h2>
-    <button class="cta">Hover</button>
-  </section>
-
-  <section>
-    <h2>16. Animation</h2>
-    <div class="dot"></div>
-  </section>
-
-  <section>
-    <h2>17. CSS Variables</h2>
-    <div class="theme">Themed box</div>
-  </section>
+    <footer id="contact">
+        <h2>Contact & Social Media</h2>
+        <ul>
+            <li><a href="https://github.com/AhmedAbdelhamidd" target="_blank">GitHub</a></li>
+            <li><a href="https://linkedin.com/in/your-profile" target="_blank">LinkedIn</a></li>
+            <li><a href="mailto:your-email@example.com">Email Me</a></li>
+        </ul>
+        <p>&copy; 2026 Ahmed Abdelhamid</p>
+    </footer>
 
 </body>
 </html>
