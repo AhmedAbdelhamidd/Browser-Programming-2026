@@ -1,0 +1,52 @@
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+}
+
+h1 { font-size: 32px; }
+h2 { font-size: 24px; }
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+section {
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+header, footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+
+nav a:hover {
+    color: #007bff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
