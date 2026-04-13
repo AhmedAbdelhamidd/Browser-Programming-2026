@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Ahmed Abdelhamid - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <a href="#main" class="skip-link">Skip to content</a>
+
+    <header>
+        <h1>Ahmed Abdelhamid</h1>
+        <figure>
+            <img src="WhatsApp Image 2026-01-06 at 5.16.15 PM (2).jpeg" alt="A photo of Ahmed Abdelhamid" width="150" />
+            <figcaption>Ahmed Abdelhamid - IT Student</figcaption>
+        </figure>
+        <p>Information Technology Student</p>
+        <p>Degree Program: Bachelor of Information Technology</p>
+        <p>Location: Kuopio, Finland</p>
+        <p>Short Bio: I am a passionate IT student interested in web development, software engineering, and autonomous robotics.</p>
+        <button onclick="toggleTheme()">Toggle Theme</button>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#external-data">External Data</a></li>
+            <li><a href="#interests">Interests</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="weather.html">Weather App 🌤️</a></li>
+        </ul>
+    </nav>
+
+    <main id="main">
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li class="skill-card">HTML</li>
+                <li class="skill-card">CSS</li>
+                <li class="skill-card">JavaScript</li>
+                <li class="skill-card">Python</li>
+                <li class="skill-card">IoT</li>
+                <li class="skill-card">LTspice</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <article class="card">
+                <h3>Autonomous Indoor Robot</h3>
+                <p>I built an autonomous robot that navigates indoor environments without human control. It uses sensors to detect and avoid obstacles.</p>
+                <a href="https://github.com/AhmedAbdelhamidd" target="_blank">View on GitHub</a>
+                <figure>
+                    <video width="100%" controls>
+                        <source src="WhatsApp Video 2026-03-22 at 2.19.05 PM (1).mp4" type="video/mp4">
+                    </video>
+                    <figcaption>Autonomous Indoor Robot in action</figcaption>
+                </figure>
+            </article>
+            <article class="card">
+                <h3>Portfolio Website</h3>
+                <p>A personal portfolio website built with HTML, CSS, and JavaScript as part of the Browser Programming course at Savonia University.</p>
+                <a href="https://github.com/AhmedAbdelhamidd/Browser-Programming-2026" target="_blank">View on GitHub</a>
+            </article>
+        </section>
+
+        <section id="external-data">
+            <h2>External Data Demo</h2>
+            <p>Click the button to load user data from an external API.</p>
+            <button onclick="loadData()">Load Data</button>
+            <div id="data-display"></div>
+        </section>
+
+        <section id="interests">
+            <h2>Areas of Interest</h2>
+            <article>
+                <h3>Technology</h3>
+                <ul>
+                    <li>Web Development (HTML, CSS, JavaScript)</li>
+                    <li>Software Engineering</li>
+                    <li>Artificial Intelligence</li>
+                    <li>Autonomous Robotics</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Studies</h3>
+                <ul>
+                    <li>Information Technology at Savonia University</li>
+                    <li>Browser Programming</li>
+                    <li>Database Management</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Hobbies</h3>
+                <ul>
+                    <li>Football</li>
+                    <li>Reading tech blogs</li>
+                    <li>Building robots and personal projects</li>
+                </ul>
+            </article>
+        </section>
+
+    </main>
+
+    <footer id="contact">
+        <h2>Contact & Social Media</h2>
+        <ul>
+            <li><a href="https://github.com/AhmedAbdelhamidd" target="_blank">GitHub</a></li>
+            <li><a href="https://linkedin.com/in/your-profile" target="_blank">LinkedIn</a></li>
+            <li><a href="mailto:your-email@example.com">Email Me</a></li>
+        </ul>
+        <p>&copy; 2026 Ahmed Abdelhamid</p>
+        <p id="last-updated"></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
