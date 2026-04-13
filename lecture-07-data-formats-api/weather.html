@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Weather App</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Back to Portfolio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section>
+            <h2>Current Weather</h2>
+            <p>Click a city button to load current weather data.</p>
+
+            <!-- City Buttons -->
+            <button id="btnKuopio">Kuopio</button>
+            <button id="btnHelsinki">Helsinki</button>
+            <button id="btnTampere">Tampere</button>
+
+            <!-- Weather Display -->
+            <div id="weatherBox" class="card">
+                <p><strong>City:</strong> <span id="city">-</span></p>
+                <p><strong>Temperature:</strong> <span id="temperature">-</span></p>
+                <p><strong>Wind Speed:</strong> <span id="wind">-</span></p>
+            </div>
+
+            <pre id="output"></pre>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Ahmed Abdelhamid</p>
+        <ul>
+            <li><a href="https://github.com/AhmedAbdelhamidd" target="_blank">GitHub</a></li>
+            <li><a href="index.html">Back to Portfolio</a></li>
+        </ul>
+    </footer>
+
+    <script src="weather.js"></script>
+</body>
+</html>
