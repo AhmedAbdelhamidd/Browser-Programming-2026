@@ -1,38 +1,24 @@
-"use strict";
+// Console messages
+console.log("Page loaded successfully");
+console.log("Portfolio of Ahmed Abdelhamid");
+console.log("JavaScript is working!");
 
-// 1) Quick connection test (open DevTools Console)
-console.log("Hello my friend✅");
+// Variables
+const studentName = "Ahmed Abdelhamid";
+let isDarkMode = false;
+let clickCount = 0;
 
-// 2) Demo 1: Button -> change text + style
-const btnHello = document.getElementById("btnHello");
-const output = document.getElementById("output");
-
-btnHello.onclick = function () {
-  output.innerText = "Hello from JavaScript!";
-  output.style.color = "green";
-  output.style.fontWeight = "bold";
-};
-
-// 3) Demo 2: Counter (+1 / -1)
-let count = 0;
-
-const btnPlus = document.getElementById("btnPlus");
-const btnMinus = document.getElementById("btnMinus");
-const counterValue = document.getElementById("counterValue");
-
-function renderCount() {
-  counterValue.innerText = count;
+// Function 1 - Theme Toggle (Feature A)
+function toggleTheme() {
+    isDarkMode = !isDarkMode;
+    document.body.classList.toggle("dark-mode");
+    console.log("Theme toggled. Dark mode is: " + isDarkMode);
 }
 
-btnPlus.onclick = function () {
-  count = count + 1;
-  renderCount();
-};
-
-btnMinus.onclick = function () {
-  count = count - 1;
-  renderCount();
-};
-
-// Initial render
-renderCount();
+// Function 2 - Click Counter (Feature B)
+function countClick() {
+    clickCount++;
+    console.log("Button clicked! Total clicks: " + clickCount);
+    document.getElementById("counter-display").textContent =
+        "You liked this project " + clickCount + " time(s)! 🎉";
+}
