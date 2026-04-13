@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="exercise.css">
+</head>
+<body>
+
+    <h1>Weather Dashboard</h1>
+
+    <p>This page loads current weather data from a public API.</p>
+
+    <div>
+        <button id="btnKuopio">Kuopio</button>
+        <button id="btnHelsinki">Helsinki</button>
+        <button id="btnOulu">Oulu</button>
+    </div>
+
+    <div id="weatherBox">
+        <p><strong>City:</strong> <span id="city">-</span></p>
+        <p><strong>Temperature:</strong> <span id="temperature">-</span></p>
+        <p><strong>Wind Speed:</strong> <span id="wind">-</span></p>
+        <p><strong>Time:</strong> <span id="time">-</span></p>
+    </div>
+
+    <pre id="output"></pre>
+
+    <script src="exercise.js"></script>
+</body>
+</html>
