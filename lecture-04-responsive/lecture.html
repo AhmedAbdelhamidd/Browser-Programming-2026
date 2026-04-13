@@ -1,38 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>L04 — JavaScript Basics</title>
-  <link rel="stylesheet" href="lecture.css" />
+    <meta charset="UTF-8" />
+    <title>Ahmed Abdelhamid - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header class="container">
-    <h1>JavaScript Basics</h1>
-    <p class="subtitle">External JS</p>
-  </header>
+    <a href="#main" class="skip-link">Skip to content</a>
 
-  <main class="container">
-    <section class="card">
-      <h2>Demo 1: Button → Change Text</h2>
-      <button id="btnHello">Say Hello</button>
-      <p id="output">Waiting...</p>
-    </section>
+    <header>
+        <h1>Ahmed Abdelhamid</h1>
+        <figure>
+            <img src="WhatsApp Image 2026-01-06 at 5.16.15 PM (2).jpeg" alt="A photo of Ahmed Abdelhamid" width="150" />
+            <figcaption>Ahmed Abdelhamid - IT Student</figcaption>
+        </figure>
+        <p>Information Technology Student</p>
+        <p>Degree Program: Bachelor of Information Technology</p>
+        <p>Location: Kuopio, Finland</p>
+        <p>Short Bio: I am a passionate IT student interested in web development, software engineering, and autonomous robotics.</p>
 
-    <section class="card">
-      <h2>Demo 2: Counter</h2>
-      <button id="btnMinus">-1</button>
-      <button id="btnPlus">+1</button>
-      <p id="counterValue">0</p>
-    </section>
-  </main>
+        <!-- Theme Toggle Button -->
+        <button onclick="toggleTheme()">Toggle Dark/Light Mode</button>
+    </header>
 
-  <footer class="container">
-    <p>Browser Programming — Lecture 4</p>
-  </footer>
+    <nav>
+        <ul>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#interests">Areas of Interest</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-  <!-- JS must be loaded at the end of body -->
-  <script src="lecture.js"></script>
+    <main id="main">
+
+        <section id="portfolio">
+            <h2>Portfolio & Works</h2>
+
+            <h3>My Links</h3>
+            <ul>
+                <li><a href="https://github.com/AhmedAbdelhamidd" target="_blank">My GitHub Profile</a></li>
+                <li><a href="https://linkedin.com/in/your-profile" target="_blank">My LinkedIn Profile</a></li>
+            </ul>
+
+            <h3>My Projects</h3>
+            <article class="card">
+                <h4>Autonomous Indoor Robot</h4>
+                <p>I worked on an autonomous robot that works indoors. The robot is able to navigate indoor environments without human control.</p>
+                <figure>
+                    <video width="560" controls>
+                        <source src="WhatsApp Video 2026-03-22 at 2.19.05 PM (1).mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <figcaption>My Autonomous Indoor Robot in action</figcaption>
+                </figure>
+            </article>
+
+            <!-- Click Counter Button -->
+            <button onclick="countClick()">Like this project 👍</button>
+            <p id="counter-display"></p>
+        </section>
+
+        <section id="interests">
+            <h2>Areas of Interest</h2>
+
+            <article>
+                <h3>Technology</h3>
+                <ul>
+                    <li>Web Development (HTML, CSS, JavaScript)</li>
+                    <li>Software Engineering</li>
+                    <li>Artificial Intelligence</li>
+                    <li>Autonomous Robotics</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Studies</h3>
+                <ul>
+                    <li>Information Technology at Savonia University</li>
+                    <li>Browser Programming</li>
+                    <li>Database Management</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Hobbies</h3>
+                <ul>
+                    <li>Football</li>
+                    <li>Reading tech blogs</li>
+                    <li>Building robots and personal projects</li>
+                </ul>
+            </article>
+        </section>
+
+    </main>
+
+    <footer id="contact">
+        <h2>Contact & Social Media</h2>
+        <ul>
+            <li><a href="https://github.com/AhmedAbdelhamidd" target="_blank">GitHub</a></li>
+            <li><a href="https://linkedin.com/in/your-profile" target="_blank">LinkedIn</a></li>
+            <li><a href="mailto:your-email@example.com">Email Me</a></li>
+        </ul>
+        <p>&copy; 2026 Ahmed Abdelhamid</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
